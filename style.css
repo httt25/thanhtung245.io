@@ -1,0 +1,53 @@
+/* style.css */
+
+/* Thiết lập chung */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    display: flex;           /* Dùng flexbox để dễ dàng căn giữa */
+    flex-direction: column;  /* Xếp các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center;     /* Căn giữa theo chiều ngang */
+    height: 100vh;           /* Chiếm toàn bộ chiều cao màn hình */
+}
+
+/* Căn giữa tiêu đề */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Khu vực biểu đồ */
+#chart {
+    width: 900px;  /* Kích thước của biểu đồ */
+    margin: 0 auto; /* Căn giữa trên trang */
+    display: block; /* Đảm bảo biểu đồ được hiển thị như một block */
+}
+
+/* Định dạng thanh (bar) */
+.bar {
+    transition: 0.2s;
+}
+
+.bar:hover {
+    opacity: 0.8;  /* Hiệu ứng hover */
+}
+
+/* Định dạng nhãn hiển thị trên cột */
+.bar-label {
+    fill: #000;         /* Màu chữ */
+    font-size: 9px;
+    font-weight: bold;
+    text-anchor: middle;/* Canh giữa ngang */
+}
+
+/* Định dạng trục */
+.axis path,
+.axis line {
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 12px;
+}
